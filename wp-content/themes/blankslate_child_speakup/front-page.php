@@ -57,7 +57,7 @@ get_header();
                                                     <div class="card-body text-center p-5">
                                                         <i class="fas fa-<?= get_field('icon_name') ?> fa-3x text-primary-emphasis mb-4"></i>
                                                         <h4 class="fw-bold text-uppercase mb-4"><?= the_title() ?></h4>
-                                                        <p class="mb-4 text-secondary"><?php echo the_content() ?></p>
+                                                        <p class="mb-4 text-secondary"><?php the_content() ?></p>
                                                         <a href="<?= get_permalink() ?>" class="fw-bold text-decoration-none link-primary">
                                                             Learn More
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">

@@ -15,7 +15,7 @@
 			if ( $query->have_posts() ): ?>
 				<div class="row">
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-						<div class="col-md-6 d-flex flex-wrap">
+						<div class="col-md-6 d-flex ">
 							<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
 								<div class="col-auto d-none d-lg-block">
 									<img src="<?= get_the_post_thumbnail_url() ?>" alt="thumbnail"
@@ -27,7 +27,7 @@
 									<h3 class="mb-0"><?= the_title() ?></h3>
 									<div class="mb-1 text-body-secondary"><?= get_the_date() ?></div>
 									<p class="card-text mb-auto">
-										<?= the_excerpt() ?>
+										<?php echo truncate_text(get_the_excerpt(), 30) ?>
 									</p>
 									<a href="<?= get_permalink() ?>"
 									   class="icon-link gap-1 icon-link-hover stretched-link">

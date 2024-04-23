@@ -260,3 +260,21 @@ function custom_login_background_color() {
 }
 add_action('login_enqueue_scripts', 'custom_login_background_color');
 
+// Custom Functions
+
+function truncate_text($text, $desired_length) {
+	// Remove leading and trailing whitespace
+	$text = trim($text);
+	// Split the text into words
+	$words = preg_split('/\s+/', $text);
+	// If the text is already shorter than the desired length, return it as is
+	if (count($words) <= $desired_length) {
+		return $text;
+	} else {
+		// Truncate the text to the desired length
+		$truncated_text = implode(' ', array_slice($words, 0, $desired_length));
+		// Add an ellipsis at the end
+		$truncated_text .= '...';
+		return $truncated_text;
+	}
+}
