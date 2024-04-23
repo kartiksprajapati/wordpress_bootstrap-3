@@ -72,23 +72,7 @@
 
         <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between py-4 mt-4 border-top">
             <p>© <?= date('Y') ?> <span class="text-primary"><?php bloginfo('name') ?>, Inc</span>. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                        <i class="fa-lg text-primary fab fa-twitter"></i>
-                        <a>
-                </li>
-                <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                        <i class="fa-lg text-primary fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                        <i class="fa-lg text-primary fab fa-facebook"></i>
-                    </a>
-                </li>
-            </ul>
+	        <?php dynamic_sidebar('footer-social-media'); ?>
         </div>
     </footer>
 </div>

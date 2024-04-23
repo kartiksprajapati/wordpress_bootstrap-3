@@ -134,6 +134,18 @@ function blankslate_child_speakup_widgets_init()
 			'after_title' => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name' => esc_html__('Footer Social Media', 'blankslate_child_speakup'),
+			'id' => 'footer-social-media',
+			'description' => esc_html__('Add widgets here.', 'blankslate_child_speakup'),
+			'before_widget' => '<section id="%1$s" class="widget %2$s text-center">',
+			'after_widget' => '</section>',
+			'before_title' => '<h2 class="widget-title">',
+			'after_title' => '</h2>',
+		)
+	);
 }
 add_action('widgets_init', 'blankslate_child_speakup_widgets_init');
 
