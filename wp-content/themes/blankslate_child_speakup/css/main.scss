@@ -1,0 +1,70 @@
+// Variable
+
+//$white: #ffffff;
+//$black: #000000;
+//
+//// Global
+//$body-bg: $black;
+//
+//$primary: #efa734;
+//
+//$custom-colors: (
+//        "primary": $primary,
+//);
+//
+
+//
+//$theme-colors: map-merge($custom-colors, $theme-colors);
+
+// Custom CSS
+.custom-logo {
+    @apply img-fluid;
+    filter: brightness(0) invert(0);
+}
+
+/* Adjust the comment form to fit with Bootstrap */
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form input[type="password"],
+.comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comment-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.comment-notes {
+    margin-bottom: 20px;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment {
+    margin-bottom: 15px;
+}
+
+.comment-form-comment textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+// Import bootstrap
+@import "./boostrap/scss/bootstrap";
